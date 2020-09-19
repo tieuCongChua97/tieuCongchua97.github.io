@@ -1,0 +1,46 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <meta charset='utf-8'>
+      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+      <title>Page Title</title>
+      <meta name='viewport' content='width=device-width, initial-scale=1'>
+      <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+      <script src='index.js'></script>
+  </head>
+  <body>
+    <iframe src="./music/Send It.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+    </iframe> 
+    <div class="wrapper">
+      <div class="container" id = "pjax-container">
+        <h1>Welcome</h1>
+        <div>
+          <input id="username" type="text" placeholder="Username">
+        </div>
+    <div>
+      <input id="password" type="password" placeholder="Password">
+    </div>
+    
+    <button class="btn" onclick="toThoiNen()">OK</button>
+  </div>
+  </div>
+      <script>
+setInterval(update,1000);
+  function toThoiNen() {
+    const name = document.querySelector('#username').value
+    const pass = document.querySelector('#password').value
+    if (name === 'nin' && pass === '1') {
+        window.location.replace("./thoinen.html");
+    }
+}
+var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  if (!isChrome){
+      $('#iframeAudio').remove()
+  }
+  else {
+      $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
+  }
+  $(document).pjax('a', '#pjax-container');
+        </script>
+  </body>
+  </html>
