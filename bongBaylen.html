@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
+    <link rel='stylesheet' type='text/css' media='screen' href='bongBaylen.css'>
+    <script src='index.js'></script>
+</head>
+<body>
+  <audio autoplay loop id="playAudio">
+    <source src="./music/gophim.mp3">
+  </audio>
+<div class="container">
+
+    
+
+
+    <div class="container__elements">
+      <div class="pill"><span class="star star1"></span><span class="star star2"></span><span class="star star3"></span><span class="star star4"></span><span class="star star5"></span><span class="star star6"></span><span class="star star7"></span><span class="star star8"></span><span class="star star9"></span><span class="star star10"></span><span class="star star11"></span><span class="star star12"></span><span class="star star13"></span><span class="star star14"></span><span class="star star15"></span><span class="star star16"></span><span class="star star17"></span><span class="star star18"></span><span class="star star19"></span><span class="star star20"></span><span class="star star21"></span><span class="star star22"></span><span class="star star23"></span><span class="star star24"></span>
+        <div class="lanternContainer">
+          <div class="lanternX1"><img class="lanternY1" src="./img/bong.png"/></div>
+          <div class="lanternX2"><img class="lanternY2" src="./img/bong.png"/></div>
+          <div class="lanternX3"><img class="lanternY3" src="./img/bong.png"/></div>
+          <div class="lanternX4"><img class="lanternY4" src="./img/bong.png"/></div>
+          <div class="lanternX5"><img class="lanternY5" src="./img/bong.png"/></div>
+          <div class="lanternX6"><img class="lanternY6" src="./img/bong.png"/></div>
+
+          <div class="lanternX7"><img class="lanternY7" src="./img/bong.png"/></div>
+          <div class="lanternX8"><img class="lanternY8" src="./img/bong.png"/></div>
+          <div class="lanternX9"><img class="lanternY9" src="./img/bong.png"/></div>
+          <div class="lanternX10"><img class="lanternY10" src="./img/bong.png"/></div>
+          <!-- <div class="animated-title">
+            <div class="text-top">
+              <div>
+                <span>Hello,</span>
+                <span>A NỈN!</span>
+              </div>
+            </div>
+            <div class="text-bottom">
+              <div>Sinh nhật vui vẻ nha !</div>
+            </div>
+          </div> -->
+
+          <div class="siz">
+            <a class="circle">
+              <div id="typedtext"></div>
+            </a>
+             
+            
+            
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    setTimeout(() => window.location.replace("./next.html", "", ""), 20000);
+    var aText = new Array(
+    "Mami & a Nỉn:", 
+    "Chúc Mami ngày càng xinh đẹp, yêu bọn con nhiều hơn, chúc a Nỉn của dì Hương và cậu Hiệu ngày càng học giỏi, đáng yêu, ngoan ngoãn nhé!",
+    "Hihihi <3 <3 <3 !!"
+    );
+    var iSpeed = 100; // time delay of print out
+    var iIndex = 0; // start printing array at this posision
+    var iArrLength = aText[0].length; // the length of the text array
+    var iScrollAt = 20; // start scrolling up at this many lines
+     
+    var iTextPos = 0; // initialise text position
+    var sContents = ''; // initialise contents variable
+    var iRow; // initialise current row
+     
+    function typewriter()
+    {
+     sContents =  ' ';
+     iRow = Math.max(0, iIndex-iScrollAt);
+     var destination = document.getElementById("typedtext");
+     
+     while ( iRow < iIndex ) {
+         debugger
+      sContents += aText[iRow++] + '<br />';
+     }
+     destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+     if ( iTextPos++ == iArrLength ) {
+      iTextPos = 0;
+      iIndex++;
+      if ( iIndex != aText.length ) {
+       iArrLength = aText[iIndex].length;
+       setTimeout("typewriter()", 500);
+      }
+     } else {
+      setTimeout("typewriter()", iSpeed);
+     }
+    }
+    
+    
+    typewriter();
+</script>
+</body>
+</html>

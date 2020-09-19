@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ece8fc;
+    background-size: cover;
+    background-image: url("./img/nen4.jpg");
+}
+.pill {
+    position: relative;
+    width: 1480px;
+    height: 745px;
+    overflow: hidden;
+}
+.lanternHills {
+    position: absolute;
+    bottom: -1px;
+    width: 225px;
+    left: -25px;
+}
+.lanternX1 {
+    position: absolute;
+    bottom: -280px;
+    left: 980px;
+    transform: translateX(0);
+    animation-name: lanternX1;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.lanternY1 {
+    display: inline block;
+    width: 86px;
+    z-index: 36000;
+    animation-name: lanternY;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translateY(0);
+    animation-delay: 0s;
+}
+@keyframes lanternX1 {
+    50% {
+        transform: translateX(14px);
+   }
+}
+@keyframes lanternY {
+    0% {
+        transform: translateY(0);
+   }
+    50% {
+        transform: translateY(-200px);
+   }
+    100% {
+        transform: translateY(-400px);
+   }
+}
+
+.lanternX6 {
+    position: absolute;
+    bottom: -180px;
+    left: 1323px;
+    transform: translateX(0);
+    animation-name: lanternX6;
+    animation-duration: 27s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.lanternY6 {
+    display: inline block;
+    width: 136px;
+    z-index: 36000;
+    animation-name: lanternY;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translateY(0);
+    animation-delay: 6s;
+}
+@keyframes lanternX6 {
+    50% {
+        transform: translateX(45px);
+   }
+}
+@keyframes lanternY {
+    0% {
+        transform: translateY(0);
+   }
+    50% {
+        transform: translateY(-200px);
+   }
+    100% {
+        transform: translateY(-400px);
+   }
+}
+.lanternX7 {
+    position: absolute;
+    bottom: -180px;
+    left: 214px;
+    transform: translateX(0);
+    animation-name: lanternX7;
+    animation-duration: 29s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.lanternY7 {
+    display: inline block;
+    width: 84px;
+    z-index: 44000;
+    animation-name: lanternY;
+    animation-duration: 22s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translateY(0);
+    animation-delay: 3s;
+}
+@keyframes lanternX7 {
+    50% {
+        transform: translateX(52px);
+   }
+}
+@keyframes lanternY {
+    0% {
+        transform: translateY(0);
+   }
+    50% {
+        transform: translateY(-200px);
+   }
+    100% {
+        transform: translateY(-400px);
+   }
+}
+.lanternX8 {
+    position: absolute;
+    bottom: -80px;
+    left: 146px;
+    transform: translateX(0);
+    animation-name: lanternX8;
+    animation-duration: 26s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.lanternY8 {
+    display: inline block;
+    width: 114px;
+    z-index: 44000;
+    animation-name: lanternY;
+    animation-duration: 23s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translateY(0);
+    animation-delay: 0s;
+}
+@keyframes lanternX8 {
+    50% {
+        transform: translateX(2px);
+   }
+}
+@keyframes lanternY {
+    0% {
+        transform: translateY(0);
+   }
+    50% {
+        transform: translateY(-200px);
+   }
+    100% {
+        transform: translateY(-400px);
+   }
+}
+.lanternX9 {
+    position: absolute;
+    bottom: -80px;
+    left: 1145px;
+    transform: translateX(0);
+    animation-name: lanternX9;
+    animation-duration: 17s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.lanternY9 {
+    display: inline block;
+    width: 65px;
+    z-index: 65000;
+    animation-name: lanternY;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translateY(0);
+    animation-delay: 4s;
+}
+@keyframes lanternX9 {
+    50% {
+        transform: translateX(73px);
+   }
+}
+@keyframes lanternY {
+    0% {
+        transform: translateY(0);
+   }
+    50% {
+        transform: translateY(-200px);
+   }
+    100% {
+        transform: translateY(-400px);
+   }
+}
+.lanternX10 {
+    position: absolute;
+    bottom: -80px;
+    left: 1281px;
+    transform: translateX(0);
+    animation-name: lanternX10;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.lanternY10 {
+    display: inline block;
+    width: 62px;
+    z-index: 62000;
+    animation-name: lanternY;
+    animation-duration: 21s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translateY(0);
+    animation-delay: 4s;
+}
+@keyframes lanternX10 {
+    50% {
+        transform: translateX(273px);
+   }
+}
+@keyframes lanternY {
+    0% {
+        transform: translateY(0);
+   }
+    50% {
+        transform: translateY(-1200px);
+   }
+    100% {
+        transform: translateY(-1400px);
+   }
+}
+/* 
+//// */
+
+/* --------Social Icons-------- */
+/* Color Variables */
+/* Social Icon Mixin */
+.social-icons {
+    display: flex;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 0 0.7rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.15s ease;
+}
+.social-icon:hover {
+    color: #fff;
+}
+.social-icon:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -150%);
+}
+.social-icon:active {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+}
+.social-icon--twitter {
+    background: #2b97f1;
+    color: #fff;
+}
+.social-icon--twitter .tooltip {
+    background: #2b97f1;
+    color: currentColor;
+}
+.social-icon--twitter .tooltip:after {
+    border-top-color: #2b97f1;
+}
+.social-icon--codepen {
+    background: #000;
+    color: #fff;
+}
+.social-icon--codepen .tooltip {
+    background: #000;
+    color: currentColor;
+}
+.social-icon--codepen .tooltip:after {
+    border-top-color: #000;
+}
+.social-icon i {
+    position: relative;
+    top: 1px;
+}
+/* Tooltips */
+.tooltip {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 0.4rem 0.6rem;
+    border-radius: 40px;
+    font-size: 0.4rem;
+    font-weight: bold;
+    opacity: 0;
+    pointer-events: none;
+    text-transform: uppercase;
+    transform: translate(-50%, -100%);
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+.tooltip:after {
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    content: "";
+    border: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: transparent;
+    transform: translate(-50%, 100%);
+}
+
+
+
+/* chay chu */
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+ @keyframes showTopText {
+	 0% {
+		 transform: translate3d(0, 100%, 0);
+	}
+	 40%, 60% {
+		 transform: translate3d(0, 50%, 0);
+	}
+	 100% {
+		 transform: translate3d(0, 0, 0);
+	}
+}
+ @keyframes showBottomText {
+	 0% {
+		 transform: translate3d(0, -100%, 0);
+	}
+	 100% {
+		 transform: translate3d(0, 0, 0);
+	}
+}
+ .animated-title {
+	 color: #fff;
+	 font-family: Roboto, Arial, sans-serif;
+	 height: 90vmin;
+	 left: 50%;
+	 position: absolute;
+	 top: 50%;
+	 transform: translate(-50%, -50%);
+	 width: 90vmin;
+}
+ .animated-title > div {
+	 height: 50%;
+	 overflow: hidden;
+	 position: absolute;
+	 width: 100%;
+}
+ .animated-title > div div {
+	 font-size: 9vmin;
+	 padding: 2vmin 0;
+	 position: absolute;
+}
+ .animated-title > div div span {
+	 display: block;
+}
+ .animated-title > div.text-top {
+	 border-bottom: 1vmin solid#ec1111;
+	 top: 0;
+}
+ .animated-title > div.text-top div {
+	 animation: showTopText 1s;
+	 animation-delay: 0.5s;
+	 animation-fill-mode: forwards;
+	 bottom: 0;
+	 transform: translate(0, 100%);
+}
+ .animated-title > div.text-top div span:first-child {
+     color: #bf6e6e;
+     font-size: 9vmin;
+}
+ .animated-title > div.text-bottom {
+	 bottom: 0;
+}
+ .animated-title > div.text-bottom div {
+	 animation: showBottomText 0.5s;
+	 animation-delay: 2.75s;
+	 animation-fill-mode: forwards;
+	 top: 0;
+	 transform: translate(0, -100%);
+}
+

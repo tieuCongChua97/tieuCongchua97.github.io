@@ -1,0 +1,578 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #a89bdc;
+    background-image: linear-gradient(to top, pink, #a89bdc);
+    background-size: cover;
+    /* background-image: url("./img/nen4.jpg"); */
+}
+.pill {
+    position: relative;
+    width: 1480px;
+    height: 745px;
+    overflow: hidden;
+}
+.lanternHills {
+    position: absolute;
+    bottom: -1px;
+    width: 225px;
+    left: -25px;
+}
+.lanternX1 {
+    position: absolute;
+    bottom: -280px;
+    left: 980px;
+    transform: translateX(0);
+    animation-name: lanternX1;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.lanternY1 {
+    display: inline block;
+    width: 86px;
+    z-index: 36000;
+    animation-name: lanternY;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translateY(0);
+    animation-delay: 0s;
+}
+@keyframes lanternX1 {
+    50% {
+        transform: translateX(14px);
+   }
+}
+@keyframes lanternY {
+    0% {
+        transform: translateY(0);
+   }
+    50% {
+        transform: translateY(-200px);
+   }
+    100% {
+        transform: translateY(-400px);
+   }
+}
+.lanternX2 {
+    position: absolute;
+    bottom: -380px;
+    left: 1033px;
+    transform: translateX(0);
+    animation-name: lanternX2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.lanternY2 {
+    display: inline block;
+    width: 119px;
+    z-index: 59000;
+    animation-name: lanternY;
+    animation-duration: 17s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translateY(0);
+    animation-delay: 3s;
+}
+@keyframes lanternX2 {
+    50% {
+        transform: translateX(12px);
+   }
+}
+@keyframes lanternY {
+    0% {
+        transform: translateY(0);
+   }
+    50% {
+        transform: translateY(-200px);
+   }
+    100% {
+        transform: translateY(-400px);
+   }
+}
+.lanternX3 {
+    position: absolute;
+    bottom: -280px;
+    left: 922px;
+    transform: translateX(0);
+    animation-name: lanternX3;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.lanternY3 {
+    display: inline block;
+    width: 94px;
+    z-index: 74000;
+    animation-name: lanternY;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translateY(0);
+    animation-delay: 3s;
+}
+@keyframes lanternX3 {
+    50% {
+        transform: translateX(12px);
+   }
+}
+@keyframes lanternY {
+    0% {
+        transform: translateY(0);
+   }
+    50% {
+        transform: translateY(-200px);
+   }
+    100% {
+        transform: translateY(-400px);
+   }
+}
+.lanternX4 {
+    position: absolute;
+    bottom: -280px;
+    left: 75px;
+    transform: translateX(0);
+    animation-name: lanternX4;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.lanternY4 {
+    display: inline block;
+    width: 138px;
+    z-index: 38000;
+    animation-name: lanternY;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translateY(0);
+    animation-delay: 2s;
+}
+@keyframes lanternX4 {
+    50% {
+        transform: translateX(31px);
+   }
+}
+@keyframes lanternY {
+    0% {
+        transform: translateY(0);
+   }
+    50% {
+        transform: translateY(-200px);
+   }
+    100% {
+        transform: translateY(-400px);
+   }
+}
+.lanternX5 {
+    position: absolute;
+    bottom: -250px;
+    left: 214px;
+    transform: translateX(0);
+    animation-name: lanternX5;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.lanternY5 {
+    display: inline block;
+    width: 168px;
+    z-index: 68000;
+    animation-name: lanternY;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translateY(0);
+    animation-delay: 4s;
+}
+@keyframes lanternX5 {
+    50% {
+        transform: translateX(41px);
+   }
+}
+@keyframes lanternY {
+    0% {
+        transform: translateY(0);
+   }
+    50% {
+        transform: translateY(-200px);
+   }
+    100% {
+        transform: translateY(-400px);
+   }
+}
+.lanternX6 {
+    position: absolute;
+    bottom: -180px;
+    left: 1323px;
+    transform: translateX(0);
+    animation-name: lanternX6;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.lanternY6 {
+    display: inline block;
+    width: 136px;
+    z-index: 36000;
+    animation-name: lanternY;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translateY(0);
+    animation-delay: 6s;
+}
+@keyframes lanternX6 {
+    50% {
+        transform: translateX(45px);
+   }
+}
+@keyframes lanternY {
+    0% {
+        transform: translateY(0);
+   }
+    50% {
+        transform: translateY(-200px);
+   }
+    100% {
+        transform: translateY(-400px);
+   }
+}
+.lanternX7 {
+    position: absolute;
+    bottom: -180px;
+    left: 214px;
+    transform: translateX(0);
+    animation-name: lanternX7;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.lanternY7 {
+    display: inline block;
+    width: 84px;
+    z-index: 44000;
+    animation-name: lanternY;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translateY(0);
+    animation-delay: 3s;
+}
+@keyframes lanternX7 {
+    50% {
+        transform: translateX(52px);
+   }
+}
+@keyframes lanternY {
+    0% {
+        transform: translateY(0);
+   }
+    50% {
+        transform: translateY(-200px);
+   }
+    100% {
+        transform: translateY(-400px);
+   }
+}
+.lanternX8 {
+    position: absolute;
+    bottom: -80px;
+    left: 146px;
+    transform: translateX(0);
+    animation-name: lanternX8;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.lanternY8 {
+    display: inline block;
+    width: 114px;
+    z-index: 44000;
+    animation-name: lanternY;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translateY(0);
+    animation-delay: 0s;
+}
+@keyframes lanternX8 {
+    50% {
+        transform: translateX(2px);
+   }
+}
+@keyframes lanternY {
+    0% {
+        transform: translateY(0);
+   }
+    50% {
+        transform: translateY(-200px);
+   }
+    100% {
+        transform: translateY(-400px);
+   }
+}
+.lanternX9 {
+    position: absolute;
+    bottom: -80px;
+    left: 1145px;
+    transform: translateX(0);
+    animation-name: lanternX9;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.lanternY9 {
+    display: inline block;
+    width: 65px;
+    z-index: 65000;
+    animation-name: lanternY;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translateY(0);
+    animation-delay: 4s;
+}
+@keyframes lanternX9 {
+    50% {
+        transform: translateX(73px);
+   }
+}
+@keyframes lanternY {
+    0% {
+        transform: translateY(0);
+   }
+    50% {
+        transform: translateY(-200px);
+   }
+    100% {
+        transform: translateY(-400px);
+   }
+}
+.lanternX10 {
+    position: absolute;
+    bottom: -80px;
+    left: 1281px;
+    transform: translateX(0);
+    animation-name: lanternX10;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.lanternY10 {
+    display: inline block;
+    width: 62px;
+    z-index: 62000;
+    animation-name: lanternY;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translateY(0);
+    animation-delay: 4s;
+}
+@keyframes lanternX10 {
+    50% {
+        transform: translateX(273px);
+   }
+}
+@keyframes lanternY {
+    0% {
+        transform: translateY(0);
+   }
+    50% {
+        transform: translateY(-1200px);
+   }
+    100% {
+        transform: translateY(-1400px);
+   }
+}
+/* 
+//// */
+
+/* --------Social Icons-------- */
+/* Color Variables */
+/* Social Icon Mixin */
+.social-icons {
+    display: flex;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 0 0.7rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.15s ease;
+}
+.social-icon:hover {
+    color: #fff;
+}
+.social-icon:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -150%);
+}
+.social-icon:active {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+}
+.social-icon--twitter {
+    background: #2b97f1;
+    color: #fff;
+}
+.social-icon--twitter .tooltip {
+    background: #2b97f1;
+    color: currentColor;
+}
+.social-icon--twitter .tooltip:after {
+    border-top-color: #2b97f1;
+}
+.social-icon--codepen {
+    background: #000;
+    color: #fff;
+}
+.social-icon--codepen .tooltip {
+    background: #000;
+    color: currentColor;
+}
+.social-icon--codepen .tooltip:after {
+    border-top-color: #000;
+}
+.social-icon i {
+    position: relative;
+    top: 1px;
+}
+/* Tooltips */
+.tooltip {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 0.4rem 0.6rem;
+    border-radius: 40px;
+    font-size: 0.4rem;
+    font-weight: bold;
+    opacity: 0;
+    pointer-events: none;
+    text-transform: uppercase;
+    transform: translate(-50%, -100%);
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+.tooltip:after {
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    content: "";
+    border: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: transparent;
+    transform: translate(-50%, 100%);
+}
+
+ /*nnnn chay letter */
+ body {
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    perspective: 1000px;
+    perspective-origin: center top;
+    transform-style: preserve-3d;
+    overflow: hidden;
+
+    font-family: 'Waiting for the Sunrise', cursive; 
+  font-size:30px; 
+  margin: 10px 50px; 
+  letter-spacing: 6px; 
+  font-weight: bold;
+  }
+  a.circle {
+    width: 50vmin;
+    height: 111vmin;
+    transform-style: preserve-3d;
+    position: absolute!important;
+    /* animation: h 1s both; */
+    transform-origin: center bottom;
+  }
+  a.circle:before,
+  a.circle:after {
+    /* animation: h 1s both; */
+    content: '';
+    display: block;
+    position: absolute;
+    width: 710px;
+    height: 100%;
+    background: url("./img/album/letter1.png");
+    background-size: cover;
+  }
+  a.circle:before {
+    animation: f 4s both;
+  }
+  @keyframes f {
+    from {
+      clip-path: inset(0 80% 0 0);
+    }
+    50%,
+    to {
+      clip-path: inset(0 0% 0 0);
+    }
+  }
+  a.circle:after {
+    filter: brightness(0.2);
+    transform: rotateY(-180deg);
+    width: 710px;
+    height: 100%;
+  }
+  .siz {
+      width: 450px;
+      height: 900px;
+      margin: 2% 30%;
+  }
+  @keyframes g {
+    from {
+      clip-path: inset(0 0 0 20%);
+      transform-origin: 20% 0;
+    }
+    50%,
+    to {
+      clip-path: inset(0 0 0 100%);
+      transform-origin: 100% 0;
+    }
+  }
+  @keyframes h {
+    from {
+      transform: rotate(-50deg);
+    }
+    to {
+      transform: rotate(-40deg);
+    }
+  }
+  
+#typedtext {
+padding-top: 152px; 
+padding-left: 213px;
+width: 541px;
+z-index: 99999!important;
+position: absolute!important;
+}
